@@ -12,6 +12,7 @@ class Board():
 
     def UpdateBoard(self, player : player.Player, row : int, column : int) -> None:
         self.board[row - 1][column - 1] = player.GetSymbol()
+        self.DisplayBoard()
 
     def CheckWin(self, player : player.Player) -> bool:
         for row in self.board:
