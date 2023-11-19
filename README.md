@@ -41,13 +41,15 @@ To start playing Tic-Tac-Toe, follow these simple installation steps:
    ```bash
    python main.py
 
-## Requirements
-
-- Python 3.11
-
 ## Usage
 
 Run the application with the following command:
+   ```python main.py```
 
-```bash
-python main.py
+## Contributing
+
+Currently, contributions are not accepted for this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
