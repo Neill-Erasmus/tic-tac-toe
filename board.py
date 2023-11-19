@@ -1,18 +1,31 @@
 import player
 class Board():
     def __init__(self) -> None:
-        self.board : list[list[str]] = self.ResetBoard()
+        self.board : list[list[str]] = [["-"] * 3 for _ in range(3)]
 
-    def ResetBoard(self) -> list[list[str]]:
-        return [["-"] * 3 for _ in range(3)]
+    def ResetBoard(self) -> None:
+        self.board = [["-"] * 3 for _ in range(3)]
 
     def DisplayBoard(self) -> None:
         for row in self.board:
             print(row)
 
-    def UpdateBoard(self, player : player.Player, row : int, column : int) -> None:
-        self.board[row - 1][column - 1] = player.GetSymbol()
-        self.DisplayBoard()
+    def UpdateBoard(self, player: player.Player) -> None:
+        while True:
+            try:
+                row    = int(input(f"{player.GetName()}: Which row would you like to play?: "))
+                column = int(input(f"{player.GetName()}: Which column would you like to play?: "))
+                if (1 <= row <= 3) and (1 <= column <= 3):
+                    if self.board[row - 1][column - 1] == "-":
+                        self.board[row - 1][column - 1] = player.GetSymbol()
+                        self.DisplayBoard()
+                        break
+                    else:
+                        print("This cell is already taken. Try again.")
+                else:
+                    print("Invalid row or column. Please enter values between 1 and 3.")
+            except ValueError:
+                print("Invalid input. Please enter a valid integer.")
 
     def CheckWin(self, player : player.Player) -> bool:
         for row in self.board:
