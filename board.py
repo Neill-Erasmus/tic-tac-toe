@@ -7,7 +7,7 @@ class Board():
     def ResetBoard(self) -> list[list[str]]:
         return [["-"] * 3 for _ in range(3)]
 
-    def DisplayBoard(self) -> str:
+    def DisplayBoard(self) -> None:
         for row in self.board:
             print(row)
 
