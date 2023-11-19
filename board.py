@@ -31,3 +31,8 @@ class Board():
                 if pos == '-':
                     return False
         return True
+
+    def ResetIfFull(self) -> None:
+        if self.CheckFull():
+            print("The board is full. It's a draw!")
+            self.ResetBoard()
