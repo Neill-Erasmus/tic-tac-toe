@@ -1,5 +1,4 @@
 import player
-
 class Board():
     def __init__(self) -> None:
         self.board : list[list[str]] = self.ResetBoard()
