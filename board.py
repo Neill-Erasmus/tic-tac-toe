@@ -8,7 +8,7 @@ class Board():
 
     def DisplayBoard(self) -> None:
         for row in self.board:
-            print(row)
+            print(" ".join(row))
 
     def UpdateBoard(self, player: player.Player) -> None:
         while True:
@@ -37,7 +37,7 @@ class Board():
         if all(self.board[i][i] == player.symbol for i in range(3)) or all(self.board[i][2 - i] == player.symbol for i in range(3)):
             return True
         return False
-    
+
     def CheckFull(self) -> bool:
         for row in self.board:
             for pos in row:
@@ -48,4 +48,5 @@ class Board():
     def ResetIfFull(self) -> None:
         if self.CheckFull():
             print("The board is full. It's a draw!")
+            self.DisplayBoard()
             self.ResetBoard()
