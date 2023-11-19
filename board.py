@@ -24,3 +24,10 @@ class Board():
         if all(self.board[i][i] == player.symbol for i in range(3)) or all(self.board[i][2 - i] == player.symbol for i in range(3)):
             return True
         return False
+    
+    def CheckFull(self) -> bool:
+        for row in self.board:
+            for pos in row:
+                if pos == '-':
+                    return False
+        return True
