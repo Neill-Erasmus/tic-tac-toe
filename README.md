@@ -1,3 +1,5 @@
+![Tic Tac Toe](https://github.com/Neill-Erasmus/tic-tac-toe/assets/141222943/a119ff93-9d5f-472a-9c26-3ab0b37b37f4)
+
 # Tic-Tac-Toe Game
 
 Welcome to the Tic-Tac-Toe game! This simple console-based Python application allows two players to take turns making moves in a classic game of Tic-Tac-Toe.
