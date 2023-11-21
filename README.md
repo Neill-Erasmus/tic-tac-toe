@@ -13,11 +13,9 @@
 
 ## Introduction
 
-Tic-Tac-Toe, also known as Noughts and Crosses, is a widely recognized game that has stood the test of time. This simple yet engaging contest involves two players taking turns marking spaces in a 3x3 grid, aiming to be the first to achieve a winning combination. With an intuitive console-based interface, this Python application offers a platform for friends, family, or even solo players to enjoy the timeless charm of Tic-Tac-Toe.
+Tic-Tac-Toe, also known as Noughts and Crosses, is a widely recognized game that has stood the test of time. This simple yet engaging contest involves two players taking turns marking spaces in a 3x3 grid, aiming to be the first to achieve a winning combination.
 
 Whether you're a seasoned player or new to the game, the Tic-Tac-Toe Game application provides a delightful and interactive way to experience this classic pastime. With features like automatic board resets after a draw and input validation to ensure fair play, the game ensures a smooth and enjoyable experience for players of all ages.
-
-Ready to embark on a journey of strategy and skill? Follow the instructions below to dive into the world of Tic-Tac-Toe and see who emerges victorious in this battle of Xs and Os!
 
 ## How to Play
 
