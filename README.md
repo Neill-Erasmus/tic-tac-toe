@@ -2,8 +2,6 @@
 
 # Tic-Tac-Toe Game
 
-Welcome to the Tic-Tac-Toe game! This simple console-based Python application allows two players to take turns making moves in a classic game of Tic-Tac-Toe.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -54,4 +52,4 @@ Currently, contributions are not accepted for this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
